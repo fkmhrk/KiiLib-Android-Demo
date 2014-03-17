@@ -4,5 +4,9 @@
     <string name="app_name">KiiLib_Demo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_hint_email">Email</string>
+    <string name="signup">Sign up</string>
+    <string name="login">Login</string>
+    <string name="title_hint_password">Password</string>
 
 </resources>

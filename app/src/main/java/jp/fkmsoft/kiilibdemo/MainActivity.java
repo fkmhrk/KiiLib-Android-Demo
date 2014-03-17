@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import jp.fkmsoft.kiilibdemo.android.page.login.LoginFragment;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -12,6 +14,10 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (savedInstanceState == null) {
+            ViewUtils.toNextFragment(getSupportFragmentManager(), LoginFragment.newInstance(), "", false);
+        }
     }
 
 
@@ -19,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+//        getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
